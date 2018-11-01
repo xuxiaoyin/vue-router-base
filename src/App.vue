@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+	#app{ font-size: 16px;}
 </style>
