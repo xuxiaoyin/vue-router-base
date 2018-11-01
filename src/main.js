@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import './assets/common.scss'
+
+import VueResource from 'vue-resource'
+Vue.use(VueResource);
+
 import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
@@ -8,6 +13,8 @@ import Home from './components/Home.vue'
 import News from './components/News.vue'
 import Detail from './components/Detail.vue'
 import Pdetail from './components/Pdetail.vue'
+
+
 
 const routes = [
 			  { path: '/home', component: Home },

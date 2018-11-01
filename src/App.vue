@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-  	<router-link to='/home'>首页</router-link>
-  	<router-link to='/news'>新闻页</router-link>
+  	<header class="header">
+	  	<router-link to='/home'>首页</router-link>
+	  	<router-link to='/news'>新闻页</router-link>
+  	</header>
     <router-view></router-view>
   </div>
 </template>
@@ -18,5 +20,16 @@ export default {
 </script>
 
 <style lang="scss">
-	#app{ font-size: 16px;}
+.header{ 
+	height: 4rem; 
+	line-height: 4rem; 
+	background: #000; 
+	font-size: 2rem;
+	text-align: center;
+	a{
+		color: #fff;
+		text-decoration: none; 
+		padding: 0 1rem;
+	}
+}
 </style>
