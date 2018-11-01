@@ -55,3 +55,23 @@ vue路由配置：
 		6、路由跳转
 		<router-link to="/foo">Go to Foo</router-link>
 		 <router-link to="/bar">Go to Bar</router-link>
+     
+     
+     
+     
+     /*不同路由传值：动态路由
+
+    1、配置动态路由
+
+       routes: [
+        // 动态路径参数 以冒号开头
+        { path: '/user/:id', component: User }
+      ]
+
+
+    2、在对应的页面
+
+      this.$route.params获取动态路由的值
+
+
+*/
