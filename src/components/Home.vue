@@ -1,5 +1,6 @@
 <template>
 	<div id="home">
+		<button @click="goNews()">跳转到新闻页</button>
 		<ul>
 			<li v-for="item,key in list">
 				<router-link :to="'/pdetail?id='+item.aid">
@@ -26,6 +27,9 @@
 				},(err)=>{
 					console.log(err)
 				})
+			},
+			goNews(){
+				this.$router.push({path:'news'})
 			}
 		},
 		mounted(){
